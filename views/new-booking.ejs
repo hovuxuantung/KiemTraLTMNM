@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt Chỗ Mới</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đặt Chỗ Mới</h1>
+    <form action="/new" method="POST">
+        <label for="customerName">Tên Khách Hàng:</label>
+        <input type="text" id="customerName" name="customerName" required>
+        <label for="date">Ngày:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Giờ:</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit">Đặt Chỗ</button>
+    </form>
+    <a href="/">Quay Lại</a>
+</body>
+</html>

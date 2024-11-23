@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sửa Đặt Chỗ</title>
+</head>
+<body>
+    <h1>Sửa Đặt Chỗ</h1>
+    <form action="/edit/<%= booking.id %>" method="POST">
+        <label for="customerName">Tên Khách Hàng:</label>
+        <input type="text" id="customerName" name="customerName" value="<%= booking.customerName %>" required>
+        <label for="date">Ngày:</label>
+        <input type="date" id="date" name="date" value="<%= booking.date %>" required>
+        <label for="time">Giờ:</label>
+        <input type="time" id="time" name="time" value="<%= booking.time %>" required>
+        <button type="submit">Cập Nhật</button>
+    </form>
+    <a href="/">Quay Lại</a>
+</body>
+</html>
